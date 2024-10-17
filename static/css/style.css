@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #df8f92 0%, #cc68ac 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* 3D-like shadow */
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  transition: transform 0.3s ease; /* Add some hover interaction */
+}
+
+.container:hover {
+  transform: translateY(-10px); /* Lift on hover for 3D effect */
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.form-box {
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  color: #555;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: #f7f7f7;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1); /* 3D shadow inside */
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+
+input[type="text"]:focus,
+select:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3); /* 3D effect on focus */
+  background: #fff;
+}
+
+.submit-btn {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 0.5rem;
+  box-shadow: 0 5px 20px rgba(74, 144, 226, 0.4); /* 3D shadow */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #357ABD;
+  transform: translateY(-2px); /* Lift on hover */
+}
+
+.result h2 {
+  color: #333;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+.result span {
+  font-weight: bold;
+  color: #4a90e2;
+}
